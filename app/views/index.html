@@ -1,8 +1,7 @@
-
-{% extends "layout.html" %}
+{% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
-  Home – GOV.UK Prototype Kit
+  Task list template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block content %}
@@ -10,34 +9,170 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
-        Prototype your service using GOV.UK Prototype Kit
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
+        GOV.UK Design System Practice
+      </h1>
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
+      <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Learn by doing</h2>
+      <p class="govuk-body ">The <a href="https://www.dailyui.co/" alt="Daily UI dot Co - Become a better designer in 100 days">Daily UI</a> 'challenge' is a popular one that aims to give some direction to UI Designers, providing them with a short brief allowing them the creative freedom to flex their skills or to apply new ones.</p>
+      <p class="govuk-body govuk-!-margin-bottom-7">To get some hands-on practice with the GOV.UK Prototype Kit and the various aspects of the Design system I decided to see which of the daily challenges could realistically be achieved using these tools/guidelines.</p>
 
-      <h2 class="govuk-heading-m">About this page</h2>
-
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
-
-      <ul class="govuk-list govuk-list--bullet">
+      <ol class="app-task-list">
         <li>
-          <a href="/docs/tutorials-and-examples">Tutorials and templates</a>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">1. </span> Sign Up (Create an account)
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="eligibility-status">
+                  The approach
+                </a>
+              </span>
+              <!-- <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong> -->
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong>
+              <!-- <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="financial-evidence-status">Cannot start yet</strong> -->
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="read-declaration-status">
+                  The outcome
+                </a>
+              </span>
+              <!-- <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong> -->
+              <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong>
+              <!-- <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="financial-evidence-status">Cannot start yet</strong> -->
+            </li>
+          </ul>
         </li>
+
         <li>
-          <a href="https://design-system.service.gov.uk">GOV.UK Design System</a>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">2. </span> Checkout Page
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="eligibility-status">
+                  The approach
+                </a>
+              </span>
+              <!-- <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong> -->
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="financial-evidence-status">Cannot start yet</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="read-declaration-status">
+                  The outcome
+                </a>
+              </span>
+              <!-- <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong> -->
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="financial-evidence-status">Cannot start yet</strong>
+            </li>
+            
+          </ul>
         </li>
-      </ul>
+
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">3. </span> Landing Page
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="eligibility-status">
+                  The approach
+                </a>
+              </span>
+              <!-- <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong> -->
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="financial-evidence-status">Cannot start yet</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="read-declaration-status">
+                  The outcome
+                </a>
+              </span>
+              <!-- <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong> -->
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="financial-evidence-status">Cannot start yet</strong>
+            </li>
+            
+          </ul>
+        </li>
+
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">4. </span> User Profile
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="eligibility-status">
+                  The approach
+                </a>
+              </span>
+              <!-- <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong> -->
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="financial-evidence-status">Cannot start yet</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="read-declaration-status">
+                  The outcome
+                </a>
+              </span>
+              <!-- <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong> -->
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="financial-evidence-status">Cannot start yet</strong>
+            </li>
+            
+          </ul>
+        </li>
+
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">5. </span> Settings (?)
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="eligibility-status">
+                  The approach
+                </a>
+              </span>
+              <!-- <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong> -->
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="financial-evidence-status">Cannot start yet</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="read-declaration-status">
+                  The outcome
+                </a>
+              </span>
+              <!-- <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">In progress</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-convictions-status">Not started</strong> -->
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="financial-evidence-status">Cannot start yet</strong>
+            </li>
+            
+          </ul>
+        </li>
+
+        
+      </ol>
     </div>
   </div>
 
