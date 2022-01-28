@@ -6,9 +6,9 @@ Because this project is built using the [Gov.UK prototype kit](https://govuk-pro
 
 The following details will let you view it:
 
-USERNAME: USER
+**USERNAME:** USER
 
-PASSWORD: DAILYUI
+**PASSWORD:** DAILYUI
 
 For each of the 5 projects included there is a page covering the approach that I have taken and another displaying the actual 'design'.
 
