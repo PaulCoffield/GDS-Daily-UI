@@ -1,6 +1,16 @@
-# Documentation
+# GOV.UK Design System Practice
 
-[Documentation and examples](https://govuk-prototype-kit.herokuapp.com/docs)
+[Live version (Heroku)](https://https://gds-daily-ui.herokuapp.com/)
 
-Documentation is also available when running the app locally at http:localhost:3000/docs
+Because this project is built using the [Gov.UK prototype kit](https://govuk-prototype-kit.herokuapp.com/) it needs to be password protected by default.
 
+The following details will let you view it:
+
+USERNAME: USER
+PASSWORD: DAILYUI
+
+For each of the 5 projects included there is a page covering the approach that I have taken and another displaying the actual 'design'.
+
+The approach pages will contain details of the components used, the considerations that should be made when using them and a link to their Gov.UK Design System page/s for further information.
+
+Enjoy.
