@@ -1,6 +1,6 @@
 # GOV.UK Design System Practice
 
-[Live version (Heroku)](https://https://gds-daily-ui.herokuapp.com/)
+[Live version (Heroku)](https://gds-daily-ui.herokuapp.com/)
 
 Because this project is built using the [Gov.UK prototype kit](https://govuk-prototype-kit.herokuapp.com/) it needs to be password protected by default.
 
