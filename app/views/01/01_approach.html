@@ -1,33 +1,45 @@
-{% extends "layout.html" %}
+{% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
   GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
   
 {% endblock %}
 
-{% block beforeContent %}
-
-<div class="govuk-phase-banner">
-  <p class="govuk-phase-banner__content">
-    <strong class="govuk-tag govuk-tag--pink govuk-phase-banner__content__tag">
-      test
-    </strong>
-    <span class="govuk-phase-banner__text">
-      This is a test 'service' – nothing about it is active.
-    </span>
-  </p>
-</div>
-
-<a href="../index.html" class="govuk-back-link">back</a>
-
-
-{% endblock %}
 
 {% block content %}
 
+<div class="govuk-width-container">
 
-<h1 class="govuk-heading-l">Create an Account</h1>
-<p class="govuk-body-l">Body content</p>
+  <a href="../index.html" class="govuk-back-link">back</a>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">Creating an account</h1>
+
+        <p class="govuk-body-l">On the surface, this should be an easy thing to do - all you need to create an account are a few input fields right?</p>
+        
+        <p>Technically accurate - but when reading the design system docs, it gets a bit more involving...</p>
+
+        <p>First you need to consider the <a href="https://design-system.service.gov.uk/patterns/create-accounts/" class="govuk-link">Create accounts</a> pattern - that's what is being utilised here.</p>
+
+        <h2 class="govuk-heading-m">Create accounts</h2>
+
+        <p>The first factor to consider is if you really need your users to creat an account. Do they NEED to have one to be able to use your service?</p>
+        <p>In the case of the Civil Service Jobs site yes, the users do need an account. There is a lot of personal information that can be added and managed when applying for jobs, so the account allows the user to maintain their control over that.</p>
+        <p>The <a href="https://dribbble.com/shots/2967949" class="govuk-link">Dribbble shot</a> that I had in mind when I first started this project seemed to be for a Politcal Newsletter.</p>
+        <p>I'd argue that the user doesn't need an account to get this - they just need to provide an email address.</p>
+      </div>
+
+      
+      
+    </div>
+
+  </main>
+
+</div>
 
 
 {% endblock %}
